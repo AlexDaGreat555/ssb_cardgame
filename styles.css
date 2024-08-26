@@ -10,22 +10,53 @@ body
     height: 100vh;
     background: lightblue;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Screen-Header
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+    background: black;
+}
+
+#Screen-Top
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background: lightblue;
+    border-radius: 5px;
+    border: 4px solid rgb(251, 217, 222);
+    padding: 1%;
+}
+
+.center
+{
+    margin: auto;
 }
 
 .memory-game
 {
-    border: 2px solid rgb(192, 2, 2);
+    border: 2px solid lightblue;
     width: 800px;
     height: 90vh;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
     perspective: 1000px;
+    padding: 1%;
 }
 
 .memory-card
 {
-    border: 2px solid black;
+    border: 3px solid black;
     width: calc(25% - 10px);
     height: calc(33.333% - 10px);
     position: relative;
