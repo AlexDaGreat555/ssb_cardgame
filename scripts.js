@@ -4,6 +4,7 @@ const cards = document.querySelectorAll('.memory-card');
 let hasFlippedCard = false;
 let firstCard, secondCard;
 let lockBoard = false;
+let flips = 0;
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
@@ -23,6 +24,8 @@ function flipCard()
     } else
     {
         // second click
+        flips += 1;
+        document.getElementById("Flips").innerHTML = flips; // Updates number of flips score
         hasFlippedCard = false;
         secondCard = this;
 
